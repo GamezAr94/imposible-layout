@@ -11,10 +11,195 @@
     --border-radius-global: 70px;
 }
 
+/* CALENDAR SECTION */
 .calendar_section { 
     flex-grow: 3.5;
+    width: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
 }
-
+.calendar_section > div {
+    width: 94%;
+    border-radius: 60px;
+}
+.top_part_right {
+    height: 74%;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.top_part_right .top_part_slot,
+.top_part_right .top_part_address {
+    height: 11%;
+    margin-top: auto;
+}
+.top_part_right .top_part_slot {
+    border-radius: 60px 0 0 0;
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.top_part_right .top_part_slot > p {
+    color: var(--primary-font-color);
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+.top_part_right .top_part_address {
+    width: 58%;
+    border-radius: 25px 60px 0 0;
+    background-color: var(--primary-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-size: 12px;
+}
+.top_part_right .top_part_address div {
+    display: flex;
+    width: 80%;
+    gap: 9px;
+}
+.top_part_right .top_part_address div > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top_part_right .top_part_address:before {
+    content: '';
+    background-color: var(--secondary-color);
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    border-radius: 30px;
+    box-shadow: 15px 10px var(--primary-color);
+    z-index: -1;
+}
+.top_part_right .top_part_calendar {
+    height: 87.5%;
+    width: 96%;
+    margin-bottom: auto;
+    border-radius: 25px 0 60px 60px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    gap: 3%;
+}
+.top_part_right .top_part_calendar .top_part_cal_btn {
+    height: 12%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top_part_cal_btn > div {
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 30px;
+    height: 30px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top_part_cal_btn > div.selected_btn {
+    background-color: black;
+    color: var(--primary-color);
+}
+.top_part_right .top_part_calendar .top_part_cal_cal {
+    height: 60%;
+}
+.top_part_right .top_part_calendar .top_part_cal_info {
+    height: 22%;
+    display: flex;
+    justify-content: center;
+}
+.top_part_cal_info .cal_info_string {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+.top_part_cal_info .cal_info_string > p {
+    font-weight: bolder;
+    font-size: 13px;
+}
+.top_part_cal_info .cal_info_string div {
+    display: flex;
+    gap: 8px;
+}
+.top_part_cal_info .cal_info_string div p:nth-child(1) {
+    font-size: 35px;
+    font-weight: bolder;
+}
+.top_part_cal_info .cal_info_string div p:nth-child(2) {
+    font-size: 12px;
+}
+.top_part_cal_info .cal_info_circle {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top_part_cal_info .cal_info_circle > div {
+    background-color: var(--complementary-color);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.bottom_part_right {
+    background-color: var(--secondary-color);
+    height: 24%;
+    display: flex;
+    flex-direction: column;
+}
+.labels_casting {
+    height: 20%;
+    width: 67%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.labels_casting p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.labels_casting_buttons_container {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+.image_casting {
+    height: 80%;
+    border-radius: 60px;
+    display: flex;
+    align-items: end;
+    background-image: url('https://img.freepik.com/premium-photo/anime-girl_811396-10363.jpg');
+    background-repeat: no-repeat;
+    background-position: center -10px;
+    background-size: 120%;
+}
+.image_casting_buttons {
+    margin: 0 auto;
+    height: 30%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.image_casting_buttons > div {
+    border-radius: 40px;
+    background-color: var(--primary-color);
+    height: 50%;
+    width: 45%;
+}
 .portrait_img {
     width: 100%;
     height: 100%;

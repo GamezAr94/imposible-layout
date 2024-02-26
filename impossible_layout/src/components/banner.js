@@ -43,7 +43,6 @@ function Banner() {
                     <div className={styles.button_next}>Next: The Null</div>
                 </div>
                 <div className={styles.portrait_img}>
-                    Hola
                     <div className={styles.container_bottomRight}>
                         <div className={styles.bottom_container}>
                             <div className={styles.date_container}>
@@ -99,7 +98,55 @@ function Banner() {
                     </div>
                 </div>
             </div>
-            <div className={styles.calendar_section}>hola</div>
+            <div className={styles.calendar_section}>
+                <div className={styles.top_part_right}>
+                    <div className={styles.top_part_slot}>
+                        <p>Slot</p>
+                    </div>
+                    <div className={styles.top_part_address}>
+                        <div>
+                            <p>icn</p>
+                            <p>1875 Robson st Vancouver</p>
+                        </div>
+                    </div>
+                    <div className={styles.top_part_calendar}>
+                        <div className={styles.top_part_cal_btn}>
+                            <div className={styles.selected_btn}>btn</div>
+                            <div>btn</div>
+                            <div>btn</div>
+                        </div>
+                        <div className={styles.top_part_cal_cal}>a</div>
+                        <div className={styles.top_part_cal_info}>
+                            <div className={styles.cal_info_string}>
+                                <p>Available</p>
+                                <div>
+                                    <p>158</p>
+                                    <p>seaofs</p>
+                                </div>
+                            </div>
+                            <div className={styles.cal_info_circle}>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.bottom_part_right}>
+                    <div className={styles.labels_casting}>
+                        <p>Casting</p>
+                        <div
+                            className={styles.labels_casting_buttons_container}>
+                            <div>l</div>
+                            <div>r</div>
+                        </div>
+                    </div>
+                    <div className={styles.image_casting}>
+                        <div className={styles.image_casting_buttons}>
+                            <div>a</div>
+                            <div>a</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
