@@ -15,7 +15,7 @@ function Banner() {
                             <li>
                                 <a href="#">a</a>
                             </li>
-                            <li>
+                            <li className={styles.selected}>
                                 <a href="#">a</a>
                             </li>
                             <li>
@@ -23,7 +23,7 @@ function Banner() {
                             </li>
                         </ul>
                     </div>
-                    <div className={styles.user_logo}>a</div>
+                    <div className={styles.user_logo}></div>
                     <div className={styles.extra_option}>a</div>
                 </div>
                 <div className={styles.secondary_btns}>
@@ -62,20 +62,6 @@ function Banner() {
                                     <div>a</div>
                                 </div>
                             </div>
-                            <svg className={styles.svg_bottom_dnd}>
-                                <defs>
-                                    <filter id="goo">
-                                        <feGaussianBlur
-                                            in="SourceGraphic"
-                                            stdDeviation="10"></feGaussianBlur>
-                                        <feColorMatrix
-                                            in="name"
-                                            mode="matrix"
-                                            values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 30 -15"></feColorMatrix>
-                                        <feBlend in="SourceGraphic"></feBlend>
-                                    </filter>
-                                </defs>
-                            </svg>
                         </div>
                         <div className={styles.logo_circle}></div>
                     </div>
@@ -83,15 +69,18 @@ function Banner() {
                         <div className={styles.diagonal_left}></div>
                         <div className={styles.container_box}>
                             <div className={styles.main_container_left_box}>
+                                <div className={styles.off_tag_container}>
+                                    <div className={styles.off_tag}>off</div>
+                                </div>
                                 hola
                             </div>
                         </div>
                     </div>
                     <div className={styles.container_top_center}>
                         <div className={styles.top_container_main}>
-                            <div>a</div>
-                            <div>a</div>
-                            <div>a</div>
+                            <div>3</div>
+                            <div>45</div>
+                            <div>alerts</div>
                         </div>
                         <div className={styles.diagonal_1}></div>
                         <div className={styles.diagonal_2}></div>
@@ -115,7 +104,104 @@ function Banner() {
                             <div>btn</div>
                             <div>btn</div>
                         </div>
-                        <div className={styles.top_part_cal_cal}>a</div>
+                        <div className={styles.top_part_cal_cal}>
+                            <div className={styles.div1}> </div>
+                            <div className={styles.div2}> </div>
+                            <div className={styles.div3}> </div>
+                            <div className={styles.div4}> </div>
+                            <div
+                                className={`${styles.div5} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div
+                                className={`${styles.div6} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div
+                                className={`${styles.div7} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div
+                                className={`${styles.div8} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div className={styles.div9}> </div>
+                            <div className={styles.div10}> </div>
+                            <div className={styles.div11}> </div>
+                            <div className={styles.div12}> </div>
+                            <div className={styles.div13}> </div>
+                            <div className={styles.div14}> </div>
+                            <div className={styles.div15}> </div>
+                            <div className={styles.div16}> </div>
+                            <div className={styles.div17}> </div>
+                            <div className={styles.div18}> </div>
+                            <div className={styles.div19}> </div>
+                            <div className={styles.div20}> </div>
+                            <div className={styles.div21}> </div>
+                            <div className={styles.div22}> </div>
+                            <div className={styles.div23}> </div>
+                            <div className={styles.div24}> </div>
+                            <div className={styles.div25}> </div>
+                            <div className={styles.div26}> </div>
+                            <div className={styles.div27}> </div>
+                            <div className={styles.div28}> </div>
+                            <div className={styles.div29}> </div>
+                            <div className={styles.div30}> </div>
+                            <div className={styles.div31}> </div>
+                            <div
+                                className={`${styles.div31} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div
+                                className={`${styles.div32} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div
+                                className={`${styles.div33} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div
+                                className={`${styles.div34} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div className={styles.div35}> </div>
+                            <div className={styles.div36}> </div>
+                            <div className={styles.div37}> </div>
+                            <div
+                                className={`${styles.div38} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div
+                                className={`${styles.div39} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div
+                                className={`${styles.div40} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div className={styles.div41}> </div>
+                            <div className={styles.div42}> </div>
+                            <div
+                                className={`${styles.div43} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div
+                                className={`${styles.div44} ${styles.selected_seat}`}>
+                                {" "}
+                            </div>
+                            <div className={styles.div45}> </div>
+                            <div className={styles.div46}> </div>
+                            <div className={styles.div47}> </div>
+                            <div className={styles.div48}> </div>
+                            <div className={styles.div49}> </div>
+                            <div className={styles.div50}> </div>
+                            <div className={styles.div51}> </div>
+                            <div className={styles.div52}> </div>
+                            <div
+                                className={`${styles.div53} ${styles.exit_door}`}></div>
+                            <div
+                                className={`${styles.div54} ${styles.exit_door}`}></div>
+                        </div>
                         <div className={styles.top_part_cal_info}>
                             <div className={styles.cal_info_string}>
                                 <p>Available</p>

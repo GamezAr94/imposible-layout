@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
 }
 .calendar_section > div {
     width: 94%;
@@ -42,6 +42,7 @@
     display: flex;
     align-items: center;
     width: 40%;
+    z-index: 2;
 }
 .top_part_right .top_part_slot > p {
     color: var(--primary-font-color);
@@ -94,7 +95,7 @@
     gap: 3%;
 }
 .top_part_right .top_part_calendar .top_part_cal_btn {
-    height: 12%;    
+    height: 17%;    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,10 +114,82 @@
     color: var(--primary-color);
 }
 .top_part_right .top_part_calendar .top_part_cal_cal {
-    height: 60%;
+    height: 50%;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; 
 }
+.top_part_cal_cal > div:not(.exit_door) {
+    background-color: var(--secondary-color);
+    border-radius: 2px 2px 10px 10px;
+}
+.top_part_cal_cal > div.selected_seat  {
+    background-color: #cccddf;
+}
+.top_part_cal_cal .exit_door {
+    background-color: yellowgreen;
+}
+.top_part_cal_cal .div1 { grid-area: 1 / 2 / 2 / 3; }
+.top_part_cal_cal .div2 { grid-area: 1 / 3 / 2 / 4; }
+.top_part_cal_cal .div3 { grid-area: 1 / 4 / 2 / 5; }
+.top_part_cal_cal .div4 { grid-area: 1 / 5 / 2 / 6; }
+.top_part_cal_cal .div5 { grid-area: 1 / 6 / 2 / 7; }
+.top_part_cal_cal .div6 { grid-area: 1 / 7 / 2 / 8; }
+.top_part_cal_cal .div7 { grid-area: 2 / 7 / 3 / 8; }
+.top_part_cal_cal .div8 { grid-area: 2 / 6 / 3 / 7; }
+.top_part_cal_cal .div9 { grid-area: 2 / 5 / 3 / 6; }
+.top_part_cal_cal .div10 { grid-area: 2 / 4 / 3 / 5; }
+.top_part_cal_cal .div11 { grid-area: 2 / 3 / 3 / 4; }
+.top_part_cal_cal .div12 { grid-area: 2 / 2 / 3 / 3; }
+.top_part_cal_cal .div13 { grid-area: 3 / 4 / 4 / 5; }
+.top_part_cal_cal .div14 { grid-area: 3 / 5 / 4 / 6; }
+.top_part_cal_cal .div15 { grid-area: 4 / 1 / 5 / 2; }
+.top_part_cal_cal .div16 { grid-area: 4 / 2 / 5 / 3; }
+.top_part_cal_cal .div17 { grid-area: 4 / 3 / 5 / 4; }
+.top_part_cal_cal .div18 { grid-area: 4 / 4 / 5 / 5; }
+.top_part_cal_cal .div19 { grid-area: 4 / 5 / 5 / 6; }
+.top_part_cal_cal .div20 { grid-area: 4 / 6 / 5 / 7; }
+.top_part_cal_cal .div21 { grid-area: 4 / 7 / 5 / 8; }
+.top_part_cal_cal .div22 { grid-area: 4 / 8 / 5 / 9; }
+.top_part_cal_cal .div23 { grid-area: 5 / 8 / 6 / 9; }
+.top_part_cal_cal .div24 { grid-area: 5 / 7 / 6 / 8; }
+.top_part_cal_cal .div25 { grid-area: 5 / 6 / 6 / 7; }
+.top_part_cal_cal .div26 { grid-area: 5 / 5 / 6 / 6; }
+.top_part_cal_cal .div27 { grid-area: 5 / 4 / 6 / 5; }
+.top_part_cal_cal .div28 { grid-area: 5 / 3 / 6 / 4; }
+.top_part_cal_cal .div29 { grid-area: 5 / 2 / 6 / 3; }
+.top_part_cal_cal .div30 { grid-area: 5 / 1 / 6 / 2; }
+.top_part_cal_cal .div31 { grid-area: 6 / 1 / 7 / 2; }
+.top_part_cal_cal .div32 { grid-area: 6 / 2 / 7 / 3; }
+.top_part_cal_cal .div33 { grid-area: 7 / 1 / 8 / 2; }
+.top_part_cal_cal .div34 { grid-area: 7 / 2 / 8 / 3; }
+.top_part_cal_cal .div35 { grid-area: 7 / 3 / 8 / 4; }
+.top_part_cal_cal .div36 { grid-area: 6 / 3 / 7 / 4; }
+.top_part_cal_cal .div37 { grid-area: 6 / 4 / 7 / 5; }
+.top_part_cal_cal .div38 { grid-area: 7 / 4 / 8 / 5; }
+.top_part_cal_cal .div39 { grid-area: 7 / 5 / 8 / 6; }
+.top_part_cal_cal .div40 { grid-area: 6 / 5 / 7 / 6; }
+.top_part_cal_cal .div41 { grid-area: 6 / 6 / 7 / 7; }
+.top_part_cal_cal .div42 { grid-area: 7 / 6 / 8 / 7; }
+.top_part_cal_cal .div43 { grid-area: 7 / 7 / 8 / 8; }
+.top_part_cal_cal .div44 { grid-area: 6 / 7 / 7 / 8; }
+.top_part_cal_cal .div45 { grid-area: 6 / 8 / 7 / 9; }
+.top_part_cal_cal .div46 { grid-area: 7 / 8 / 8 / 9; }
+.top_part_cal_cal .div47 { grid-area: 8 / 7 / 9 / 8; }
+.top_part_cal_cal .div48 { grid-area: 8 / 6 / 9 / 7; }
+.top_part_cal_cal .div49 { grid-area: 8 / 5 / 9 / 6; }
+.top_part_cal_cal .div50 { grid-area: 8 / 4 / 9 / 5; }
+.top_part_cal_cal .div51 { grid-area: 8 / 3 / 9 / 4; }
+.top_part_cal_cal .div52 { grid-area: 8 / 2 / 9 / 3; }
+.top_part_cal_cal .div53 { grid-area: 3 / 1 / 4 / 2; }
+.top_part_cal_cal .div54 { grid-area: 3 / 8 / 4 / 9; } 
+
 .top_part_right .top_part_calendar .top_part_cal_info {
-    height: 22%;
+    height: 26%;
     display: flex;
     justify-content: center;
 }
@@ -181,7 +254,7 @@
     height: 80%;
     border-radius: 60px;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     background-image: url('https://img.freepik.com/premium-photo/anime-girl_811396-10363.jpg');
     background-repeat: no-repeat;
     background-position: center -10px;
@@ -396,11 +469,60 @@
 .container_btn_lft .container_box .main_container_left_box {
     background-color: var(--primary-color);
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     width: 95%;
     height: 95%;
     border-radius: var(--border-radius-global);
+    z-index: 1;
+}
+.main_container_left_box .off_tag_container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 70px;
+    border-radius: 0 60px 0 50px;
+}
+.off_tag_container::after {
+    content: '';
+    background-color: var(--primary-color);
+    box-shadow: 10px -5px var(--secondary-color);
+    height: 50px;
+    width: 60px;
+    position: absolute;
+    border-radius: 0px 30px 0px 0;
+    top: 100%;
+    right: 0;
+}
+.off_tag_container::before {
+    content: '';
+    background-color: var(--primary-color);
+    box-shadow: 10px -5px var(--secondary-color);
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    border-radius: 0px 30px 0px 0;
+    top: 0px;
+    right: 100%;
+}
+.off_tag_container .off_tag {
+    background-color: black;
+    color: white;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 50%;
 }
 
 /* Bottom container inside banner */
@@ -414,7 +536,6 @@
 }
 .bottom_container {
     z-index: 1;
-    filter: url(#goo);
     display: flex;
     height: 100%;
     position: relative;
@@ -432,17 +553,17 @@
     align-items: center;
     flex-direction: column;
 }
-.bottom_container .date_container::after {
-    content: '';
-    background-color: var(--optional-color);
-    width: 50px;
-    height: 30px;
-    top: 95%;
-    right: -23px;
-    rotate: 45deg;
-    position: absolute;
-    z-index: -1;
-    color: var(--primary-font-color);
+.bottom_container .date_container:after {
+    content:"";
+    background-color: transparent;
+    width:80px;
+    height:53px;
+    position:absolute;
+    top: 99%;
+    right: -1%;
+    border-radius: 0 60px 0px 0;
+    box-shadow: 20px -10px var(--optional-color);
+    z-index:5;
 }
 .bottom_container .date_container > p:nth-child(1) {
     font-size: 10px;
@@ -593,7 +714,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7%;
+    gap: 9%;
 }
 .logo_img,
 .options_menu,
@@ -613,6 +734,7 @@
 }
 .options_menu {
     height: 210px;
+    width: 100%;
 }
 .options_menu ul {
     height: 100%;
@@ -622,11 +744,12 @@
     justify-content: space-between
 }
 .options_menu ul li {
-    background-color: red;
-    height: 15%;
+    height: 13%;
+}
+.options_menu ul li.selected {
+    border-right: 4px solid red;
 }
 .options_menu ul li a {
-    border: 1px solid brown;
     width: 100%;
     height: 100%;
     display: flex;
@@ -634,10 +757,14 @@
     align-items: center;
 }
 .user_logo {
-    background-color: red;
+    background-image: url(
+        https://static.vecteezy.com/system/resources/thumbnails/033/662/051/small_2x/cartoon-lofi-young-manga-style-girl-while-listening-to-music-in-the-rain-ai-generative-photo.jpg
+    );
     height: 65px;
     width: 65px;
     border-radius: 50%;
+    background-size: cover;
+    background-position: -15px 0px;
 }
 .extra_option {
     background-color: red;
