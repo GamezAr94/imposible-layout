@@ -131,7 +131,10 @@
     background-color: #cccddf;
 }
 .top_part_cal_cal .exit_door {
-    background-color: yellowgreen;
+    color: rgb(209 209 209);
+}
+.top_part_cal_cal .exit_door:last-child {
+    transform: scale(-1,1);
 }
 .top_part_cal_cal .div1 { grid-area: 1 / 2 / 2 / 3; }
 .top_part_cal_cal .div2 { grid-area: 1 / 3 / 2 / 4; }
@@ -684,6 +687,12 @@
     height: 60px;
     width: 60px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_circular a svg {
+    width: 24px;
 }
 .large_btn_circular {
     height: 140px;
@@ -694,12 +703,21 @@
     gap: 5px;
 }
 .large_btn_circular > div {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 85%;
     height: 35%;
     border-radius: 25px;
 }
-.large_btn_circular > div:nth-child(2) {
+.large_btn_circular > div svg {
+    width: 18px;
+    color: var(--secondary-icon-color);
+}
+.large_btn_circular > div.selected_theme svg {
+    color: black;
+}
+.large_btn_circular > div.selected_theme {
     background-color: var(--primary-color);
     height: 50%;
 }
@@ -733,7 +751,7 @@
     height: 50px;
 }
 .options_menu {
-    height: 210px;
+    height: 240px;
     width: 100%;
 }
 .options_menu ul {
@@ -753,8 +771,17 @@
     width: 100%;
     height: 100%;
     display: flex;
+    font-size: 4px;
     justify-content: center;
     align-items: center;
+}
+.options_menu ul li.selected a svg {
+    color: red;
+}
+.options_menu ul li a svg {
+    width: 20px;
+    height: 20px;
+    color: var(--secondary-icon-color);
 }
 .user_logo {
     background-image: url(
@@ -767,6 +794,9 @@
     background-position: -15px 0px;
 }
 .extra_option {
-    background-color: red;
     height: 50px;
+}
+.extra_option a svg {
+    width: 30px;
+    color: var(--primary-font-color);
 }

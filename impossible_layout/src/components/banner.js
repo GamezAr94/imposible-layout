@@ -1,4 +1,21 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faReceipt } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faWallet } from "@fortawesome/free-solid-svg-icons";
+import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import { faTag } from "@fortawesome/free-solid-svg-icons";
+import { faFilm } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faRankingStar } from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/bento_layout.module.css";
 
 function Banner() {
@@ -10,30 +27,50 @@ function Banner() {
                     <div className={styles.options_menu}>
                         <ul>
                             <li>
-                                <a href="#">a</a>
+                                <a href="#">
+                                    <FontAwesomeIcon icon={faHouse} />
+                                </a>
                             </li>
                             <li>
-                                <a href="#">a</a>
+                                <a href="#">
+                                    <FontAwesomeIcon icon={faFilm} />
+                                </a>
                             </li>
                             <li className={styles.selected}>
-                                <a href="#">a</a>
+                                <a href="#">
+                                    <FontAwesomeIcon icon={faStar} />
+                                </a>
                             </li>
                             <li>
-                                <a href="#">a</a>
+                                <a href="#">
+                                    <FontAwesomeIcon icon={faLocationDot} />
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div className={styles.user_logo}></div>
-                    <div className={styles.extra_option}>a</div>
+                    <div className={styles.extra_option}>
+                        <a href="#">
+                            <FontAwesomeIcon icon={faRankingStar} />
+                        </a>
+                    </div>
                 </div>
                 <div className={styles.secondary_btns}>
-                    <div className={styles.button_circular}>a</div>
+                    <div className={styles.button_circular}>
+                        <a href="#">
+                            <FontAwesomeIcon icon={faCartShopping} />
+                        </a>
+                    </div>
                     <div
                         className={`
                             ${styles.button_circular} ${styles.large_btn_circular}
                         `}>
-                        <div>a</div>
-                        <div>a</div>
+                        <div>
+                            <FontAwesomeIcon icon={faMoon} />
+                        </div>
+                        <div className={styles.selected_theme}>
+                            <FontAwesomeIcon icon={faSun} />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -57,9 +94,26 @@ function Banner() {
                                     </p>
                                 </div>
                                 <div>
-                                    <div>a</div>
-                                    <div>a</div>
-                                    <div>a</div>
+                                    <div>
+                                        <a href="#">
+                                            todo
+                                            <FontAwesomeIcon icon={faHeart} />
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            todo
+                                            <FontAwesomeIcon
+                                                icon={faCircleInfo}
+                                            />
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            todo
+                                            <FontAwesomeIcon icon={faPlay} />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +124,9 @@ function Banner() {
                         <div className={styles.container_box}>
                             <div className={styles.main_container_left_box}>
                                 <div className={styles.off_tag_container}>
-                                    <div className={styles.off_tag}>off</div>
+                                    <div className={styles.off_tag}>
+                                        <FontAwesomeIcon icon={faTag} />
+                                    </div>
                                 </div>
                                 hola
                             </div>
@@ -78,9 +134,24 @@ function Banner() {
                     </div>
                     <div className={styles.container_top_center}>
                         <div className={styles.top_container_main}>
-                            <div>3</div>
-                            <div>45</div>
-                            <div>alerts</div>
+                            <div>
+                                <a href="#">
+                                    todo
+                                    <FontAwesomeIcon icon={faReceipt} />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    todo
+                                    <FontAwesomeIcon icon={faWallet} />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    todo
+                                    <FontAwesomeIcon icon={faBell} />
+                                </a>
+                            </div>
                         </div>
                         <div className={styles.diagonal_1}></div>
                         <div className={styles.diagonal_2}></div>
@@ -94,7 +165,7 @@ function Banner() {
                     </div>
                     <div className={styles.top_part_address}>
                         <div>
-                            <p>icn</p>
+                            <FontAwesomeIcon icon={faLocationDot} />
                             <p>1875 Robson st Vancouver</p>
                         </div>
                     </div>
@@ -110,21 +181,13 @@ function Banner() {
                             <div className={styles.div3}> </div>
                             <div className={styles.div4}> </div>
                             <div
-                                className={`${styles.div5} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div5} ${styles.selected_seat}`}></div>
                             <div
-                                className={`${styles.div6} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div6} ${styles.selected_seat}`}></div>
                             <div
-                                className={`${styles.div7} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div7} ${styles.selected_seat}`}></div>
                             <div
-                                className={`${styles.div8} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div8} ${styles.selected_seat}`}></div>
                             <div className={styles.div9}> </div>
                             <div className={styles.div10}> </div>
                             <div className={styles.div11}> </div>
@@ -149,46 +212,28 @@ function Banner() {
                             <div className={styles.div30}> </div>
                             <div className={styles.div31}> </div>
                             <div
-                                className={`${styles.div31} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div31} ${styles.selected_seat}`}></div>
                             <div
-                                className={`${styles.div32} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div32} ${styles.selected_seat}`}></div>
                             <div
-                                className={`${styles.div33} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div33} ${styles.selected_seat}`}></div>
                             <div
-                                className={`${styles.div34} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div34} ${styles.selected_seat}`}></div>
                             <div className={styles.div35}> </div>
                             <div className={styles.div36}> </div>
                             <div className={styles.div37}> </div>
                             <div
-                                className={`${styles.div38} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div38} ${styles.selected_seat}`}></div>
                             <div
-                                className={`${styles.div39} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div39} ${styles.selected_seat}`}></div>
                             <div
-                                className={`${styles.div40} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div40} ${styles.selected_seat}`}></div>
                             <div className={styles.div41}> </div>
                             <div className={styles.div42}> </div>
                             <div
-                                className={`${styles.div43} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div43} ${styles.selected_seat}`}></div>
                             <div
-                                className={`${styles.div44} ${styles.selected_seat}`}>
-                                {" "}
-                            </div>
+                                className={`${styles.div44} ${styles.selected_seat}`}></div>
                             <div className={styles.div45}> </div>
                             <div className={styles.div46}> </div>
                             <div className={styles.div47}> </div>
@@ -198,9 +243,13 @@ function Banner() {
                             <div className={styles.div51}> </div>
                             <div className={styles.div52}> </div>
                             <div
-                                className={`${styles.div53} ${styles.exit_door}`}></div>
+                                className={`${styles.div53} ${styles.exit_door}`}>
+                                <FontAwesomeIcon icon={faRightFromBracket} />
+                            </div>
                             <div
-                                className={`${styles.div54} ${styles.exit_door}`}></div>
+                                className={`${styles.div54} ${styles.exit_door}`}>
+                                <FontAwesomeIcon icon={faRightFromBracket} />
+                            </div>
                         </div>
                         <div className={styles.top_part_cal_info}>
                             <div className={styles.cal_info_string}>
