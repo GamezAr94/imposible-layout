@@ -93,25 +93,25 @@ function Banner() {
                                         Dragon <span>&</span>
                                     </p>
                                 </div>
-                                <div>
+                                <div className={styles.icons_content_dnd}>
                                     <div>
                                         <a href="#">
-                                            todo
                                             <FontAwesomeIcon icon={faHeart} />
+                                            32,190
                                         </a>
                                     </div>
                                     <div>
                                         <a href="#">
-                                            todo
                                             <FontAwesomeIcon
                                                 icon={faCircleInfo}
                                             />
+                                            Synopsis
                                         </a>
                                     </div>
                                     <div>
                                         <a href="#">
-                                            todo
                                             <FontAwesomeIcon icon={faPlay} />
+                                            Trailer
                                         </a>
                                     </div>
                                 </div>
@@ -128,7 +128,20 @@ function Banner() {
                                         <FontAwesomeIcon icon={faTag} />
                                     </div>
                                 </div>
-                                hola
+                                <div className={styles.promos_container}>
+                                    <p>20% off</p>
+                                    <div>
+                                        <p>Free Popcorn</p>
+                                        <p>5% off</p>
+                                    </div>
+                                </div>
+                                <div className={styles.promos_title}>
+                                    <p>Promo</p>
+                                    <div>
+                                        <p>24</p>
+                                        <p>ready</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -136,19 +149,16 @@ function Banner() {
                         <div className={styles.top_container_main}>
                             <div>
                                 <a href="#">
-                                    todo
                                     <FontAwesomeIcon icon={faReceipt} />
                                 </a>
                             </div>
                             <div>
                                 <a href="#">
-                                    todo
                                     <FontAwesomeIcon icon={faWallet} />
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
-                                    todo
+                                <a className={styles.alert_msg} href="#">
                                     <FontAwesomeIcon icon={faBell} />
                                 </a>
                             </div>
@@ -171,9 +181,9 @@ function Banner() {
                     </div>
                     <div className={styles.top_part_calendar}>
                         <div className={styles.top_part_cal_btn}>
-                            <div className={styles.selected_btn}>btn</div>
-                            <div>btn</div>
-                            <div>btn</div>
+                            <div className={styles.selected_btn}>18:00</div>
+                            <div>21:25</div>
+                            <div>23:50</div>
                         </div>
                         <div className={styles.top_part_cal_cal}>
                             <div className={styles.div1}> </div>
@@ -256,7 +266,7 @@ function Banner() {
                                 <p>Available</p>
                                 <div>
                                     <p>158</p>
-                                    <p>seaofs</p>
+                                    <p>seats</p>
                                 </div>
                             </div>
                             <div className={styles.cal_info_circle}>
@@ -276,8 +286,8 @@ function Banner() {
                     </div>
                     <div className={styles.image_casting}>
                         <div className={styles.image_casting_buttons}>
-                            <div>a</div>
-                            <div>a</div>
+                            <div><img src="https://imgs.search.brave.com/gkk_r2JudHmMAAk7Pm7LuwevHTAJKyrESxRMXN9j3qI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/em1vLmFpL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI0LzAxL0lt/YWdlLWdlbmVyYXRl/ZC1ieS1aTU9zLUFJ/LWFuaW1lLWdlbmVy/YXRvci53ZWJw"/>Shitoda</div>
+                            <div><img src="https://imgs.search.brave.com/1M_9SrDFA8GNgwzgK6gchL_GKYU-_16UUbBOiGLf7f0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2VjLzE5/LzY2L2VjMTk2NjI2/M2E2MjkxNDI2ZmJm/ZWI2Yjg0MWIxNGY2/LmpwZw"/>James Carl</div>
                         </div>
                     </div>
                 </div>
