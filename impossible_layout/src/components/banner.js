@@ -280,14 +280,20 @@ function Banner() {
                         <p>Casting</p>
                         <div
                             className={styles.labels_casting_buttons_container}>
-                            <div>l</div>
-                            <div>r</div>
+                            <div></div>
+                            <div></div>
                         </div>
                     </div>
                     <div className={styles.image_casting}>
                         <div className={styles.image_casting_buttons}>
-                            <div><img src="https://imgs.search.brave.com/gkk_r2JudHmMAAk7Pm7LuwevHTAJKyrESxRMXN9j3qI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/em1vLmFpL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI0LzAxL0lt/YWdlLWdlbmVyYXRl/ZC1ieS1aTU9zLUFJ/LWFuaW1lLWdlbmVy/YXRvci53ZWJw"/>Shitoda</div>
-                            <div><img src="https://imgs.search.brave.com/1M_9SrDFA8GNgwzgK6gchL_GKYU-_16UUbBOiGLf7f0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2VjLzE5/LzY2L2VjMTk2NjI2/M2E2MjkxNDI2ZmJm/ZWI2Yjg0MWIxNGY2/LmpwZw"/>James Carl</div>
+                            <div>
+                                <img src="https://imgs.search.brave.com/gkk_r2JudHmMAAk7Pm7LuwevHTAJKyrESxRMXN9j3qI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/em1vLmFpL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI0LzAxL0lt/YWdlLWdlbmVyYXRl/ZC1ieS1aTU9zLUFJ/LWFuaW1lLWdlbmVy/YXRvci53ZWJw" />
+                                Shitoda
+                            </div>
+                            <div>
+                                <img src="https://imgs.search.brave.com/1M_9SrDFA8GNgwzgK6gchL_GKYU-_16UUbBOiGLf7f0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2VjLzE5/LzY2L2VjMTk2NjI2/M2E2MjkxNDI2ZmJm/ZWI2Yjg0MWIxNGY2/LmpwZw" />
+                                James Carl
+                            </div>
                         </div>
                     </div>
                 </div>
