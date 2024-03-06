@@ -695,8 +695,9 @@
     width: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 .bottom_container .rest_content_dnd > div {
     display: flex;
@@ -704,15 +705,24 @@
     justify-content: center;
     border-radius: 50px;
     width: 88%;
+    position: relative;
     color: var(--primary-font-color);
 }
 .bottom_container .rest_content_dnd > div:nth-child(1) {
-    height: 60%;
+    height: 55%;
     flex-direction: column;
-    font-size: 44px;
+    font-family: 'AsianFont';
+    font-size: 65px;
+    line-height: 60px;
+    letter-spacing: -4px;
+}
+.bottom_container .rest_content_dnd > div:nth-child(1) p {
+    width: 95%;
 }
 .bottom_container .rest_content_dnd > div:nth-child(1) span {
     color: var(--complementary-font-color);
+    font-size: 120px;
+    position: absolute;
 }
 .bottom_container .rest_content_dnd div.icons_content_dnd {
     background-color: var(--primary-color);
@@ -883,7 +893,8 @@
 }
 
 .logo_img {
-    background-color: red;
+    font-family: 'AsianFont';
+    font-size: 50px;
     margin-top: 25px;
     height: 50px;
 }

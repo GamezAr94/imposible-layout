@@ -23,7 +23,7 @@ function Banner() {
         <div className={styles.bento_layout}>
             <div className={styles.icons_bar}>
                 <div className={styles.container_icons}>
-                    <div className={styles.logo_img}>logo</div>
+                    <div className={styles.logo_img}>GZ</div>
                     <div className={styles.options_menu}>
                         <ul>
                             <li>
