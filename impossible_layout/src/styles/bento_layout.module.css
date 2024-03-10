@@ -3,9 +3,8 @@
     width: 95vw;
     max-width: 1600px;
     min-width: 1400px;
-    height: 95vh;
+    height: 97vh;
     min-height: 700px;
-    max-height: 1300px;
     display: flex;
     flex-wrap: nowrap;
     --border-radius-global: 70px;
@@ -529,7 +528,10 @@
     rotate: 40.5deg;
 }
 
-.container_btn_lft .container_box .main_container_left_box {
+.main_container_left_box.inner_seats {
+    display: none;
+}
+.main_container_left_box {
     background-color: var(--primary-color);
     display: flex;
     position: relative;
@@ -624,7 +626,6 @@
 .main_container_left_box .promos_title {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 .main_container_left_box .promos_title > div {
     display: flex;
@@ -634,7 +635,7 @@
     font-size: 25px;
 }
 .main_container_left_box .promos_title > div p:nth-child(1) {
-    font-size: 50px;
+    font-size: clamp(40px, 5vh, 80px);
     font-weight: bold;
 }
 
@@ -879,7 +880,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 9%;
+    gap: clamp(26px, 4vh, 100px);
 }
 .logo_img,
 .options_menu,
@@ -947,4 +948,175 @@
 .extra_option a svg {
     width: 30px;
     color: var(--primary-font-color);
+}
+
+@media only screen and (max-width: 1430px) {
+    .bento_layout {
+        background-color: green;
+        flex-wrap: wrap;
+        width: 94vw;
+        height: auto;
+        gap: 3vh 0px;
+        min-width: 0;
+        min-height: 0;
+        font-size: clamp(12px, 1vw, 15px);
+    }
+    /* Menu Area */
+    .icons_bar {
+        flex-direction: row;
+        width: 100%;
+        height: 70px;
+    }
+    .container_icons {
+        height: 100%;
+        flex-direction: row;
+        gap: clamp(23px, 4vh, 100px);
+        justify-content: space-around;
+    }
+    .container_icons::before {
+        width: 101%;
+        height: 107%;
+    }
+    .options_menu {
+        height: auto;
+    }
+    .options_menu ul {
+        flex-direction: row;
+        height: 100%;
+    }
+    .icons_bar .secondary_btns {
+        flex-direction: row;
+        height: 100%;
+        width: 18%;
+    }
+    .icons_bar .secondary_btns .button_circular {
+        flex-direction: row;
+        width: 100px;
+        height: 100%;
+    }
+    .logo_img {
+        width: 15%;
+        margin-top: 0;
+        justify-content: unset;
+    } 
+    .options_menu {
+        width: 40%;
+    } 
+    .extra_option {
+        width: 10%;
+    }
+    .user_logo {
+        width: 65px;
+        height: 65px;
+    }
+    .options_menu ul li.selected {
+        border-right: none;
+        border-bottom: 4px solid red;
+    }
+    /* Banner area */
+    .center_banner {
+        width: 50%;
+        height: 85vh;
+    }
+    .main_container_left_box .off_tag_container {
+        height: 47px;
+    }
+    .off_tag_container .off_tag {
+        top: 0;
+        width: 60px;
+        height: 60px;
+    }
+    .bottom_container .rest_content_dnd > div:nth-child(1) {
+        font-size: clamp(45px, 4vw, 64px);
+    }
+    .bottom_container .rest_content_dnd > div:nth-child(1) span {
+        font-size: clamp(90px, 9vw, 120px);
+    }
+    .bottom_container .date_container:after {
+        top: 98%;
+        box-shadow: 40px -10px var(--optional-color);
+    }
+    .bottom_container .rest_content_dnd div.icons_content_dnd {
+        z-index: 6;
+    }
+    /*Calendar area*/
+    .calendar_section {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 1045px) {
+    .bento_layout {
+        background-color: purple;
+    }
+    /* Banner area */
+    .center_banner {
+        width: 100%;
+        height: 85vh;
+    }
+    .container_btn_lft {
+        display: none;
+    }
+    /* Seats calendar section*/
+    .calendar_section {
+        align-items: start;
+        flex-direction: row;
+        gap: 0px 20px;
+    }
+    .main_container_left_box.inner_seats {
+        display: flex;
+    }
+    .top_part_right,
+    .bottom_part_right {
+        height: 100%;
+    }
+    .bottom_part_right {
+        gap: 20px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .off_tag_container .off_tag {
+        width: 80px;
+        height: 80px;
+    }
+    .off_tag_container .off_tag svg {
+        width: 27px;
+    }
+    .image_casting {
+        height: 450px;
+        width: 70%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and lower) */
+@media only screen and (max-width: 785px) {
+    .bento_layout {
+        background-color: pink;
+    }
+    /* Banner */
+    .container_bottomRight {
+        width: 80%;
+        min-width: 380px;
+        max-width: 400px;
+    }
+    .container_btn_lft {
+        display: none;
+    }
+    /* Seats calendar section*/
+    .calendar_section {
+        align-items: center;
+        flex-direction: column;
+        gap: 20px 0px;
+        z-index: 10;
+    }
+    .bottom_part_right > div:nth-child(1) {
+        height: 5%;
+    }
+    .image_casting {
+        width: 80%;
+        height: clamp(200px, 69vw, 650px);
+    }
+    .main_container_left_box.inner_seats {
+        height: 30%;
+    }
 }

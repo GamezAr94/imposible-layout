@@ -122,7 +122,8 @@ function Banner() {
                     <div className={styles.container_btn_lft}>
                         <div className={styles.diagonal_left}></div>
                         <div className={styles.container_box}>
-                            <div className={styles.main_container_left_box}>
+                            <div
+                                className={`${styles.main_container_left_box} ${styles.inner_banner}`}>
                                 <div className={styles.off_tag_container}>
                                     <div className={styles.off_tag}>
                                         <FontAwesomeIcon icon={faTag} />
@@ -293,6 +294,28 @@ function Banner() {
                             <div>
                                 <img src="https://imgs.search.brave.com/1M_9SrDFA8GNgwzgK6gchL_GKYU-_16UUbBOiGLf7f0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2VjLzE5/LzY2L2VjMTk2NjI2/M2E2MjkxNDI2ZmJm/ZWI2Yjg0MWIxNGY2/LmpwZw" />
                                 James Carl
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        className={`${styles.main_container_left_box} ${styles.inner_seats}`}>
+                        <div className={styles.off_tag_container}>
+                            <div className={styles.off_tag}>
+                                <FontAwesomeIcon icon={faTag} />
+                            </div>
+                        </div>
+                        <div className={styles.promos_container}>
+                            <p>20% off</p>
+                            <div>
+                                <p>Free Popcorn</p>
+                                <p>5% off</p>
+                            </div>
+                        </div>
+                        <div className={styles.promos_title}>
+                            <p>Promo</p>
+                            <div>
+                                <p>24</p>
+                                <p>ready</p>
                             </div>
                         </div>
                     </div>
